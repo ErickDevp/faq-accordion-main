@@ -24,9 +24,11 @@ html {
 
 body {
     height: 100vh;
+    background-size: 100%;
     background-image: url(../img/background-pattern-desktop.svg);
     background-repeat: no-repeat;
-    
+    background-position: top left right;
+
     font-family: "Work Sans", sans-serif;
     font-size: 1.2rem;
     background-color: var(--color-light-pink);
@@ -37,8 +39,8 @@ body {
 }
 
 .container {
-    margin-top: 10rem;
     border-radius: 2rem;
+    margin: 0 3rem;
     padding: 3rem;
     width: 45rem;
 
@@ -70,6 +72,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: 3rem;
 }
 
 .container article div h3:hover {
@@ -88,3 +91,9 @@ article p {
     color: var(--color-grayish-purple);
 }
 
+@media (max-width: 730px) {
+    body {
+        background-image: url(../img/background-pattern-mobile.svg);
+
+    }  
+};

@@ -23,5 +23,4 @@ document.addEventListener('click',(e) => {
     if(el.classList.contains(classeChanges)){
         addHidden(el);
     }
-
 });
