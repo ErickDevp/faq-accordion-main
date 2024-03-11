@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+:root {
+    --color-white: hsl(0, 0%, 100%);
+    --color-light-pink: hsl(275, 100%, 97%);
+    --color-grayish-purple: hsl(292, 16%, 49%);
+    --color-purple: hsl(292, 95%, 39%);
+    --color-dark-purple: hsl(292, 42%, 14%);
+}
+
+.hidden {
+    display: none;
+}
+
+body {
+    height: 100vh;
+    background-image: url(../img/background-pattern-desktop.svg);
+    background-repeat: no-repeat;
+    
+    font-family: "Work Sans", sans-serif;
+    font-size: 1.2rem;
+    background-color: var(--color-light-pink);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    margin-top: 10rem;
+    border-radius: 2rem;
+    padding: 3rem;
+    width: 45rem;
+
+    background: var(--color-white);
+}
+
+.title-faqs{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.title-faqs img {
+    width: 3rem;
+}
+
+.title-faqs h1 {
+    font-size: 3.5rem;
+    color: var(--color-dark-purple);
+}
+
+.container article {
+    border-bottom: 0.1rem solid var(--color-light-pink);
+
+}
+.container article div {
+    padding: 1.5rem 0 1.5rem;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container article div h3:hover {
+    cursor: pointer;
+    color: var(--color-purple);
+}
+
+.container article div img {
+    width: 2.2rem;
+    cursor: pointer;
+}
+
+article p {
+    padding-bottom: 1.5rem;
+    line-height: 2rem;
+    color: var(--color-grayish-purple);
+}
+
